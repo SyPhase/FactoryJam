@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class UnitSelect : MonoBehaviour
+public class Selector : MonoBehaviour
 {
     Camera mainCamera;
 
@@ -29,7 +27,8 @@ public class UnitSelect : MonoBehaviour
         print("Raycast hit: " + hit.collider.name + ", Tag:" + hit.collider.tag);
         if (hit.collider.tag == "Selectable")
         {
-            // TODO : Do Factory Logic
+            // Invoke EVENT
+            ResourceManager.Instance.SelectResource(4);
         }
     }
 }

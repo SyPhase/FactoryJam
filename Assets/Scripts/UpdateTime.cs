@@ -28,7 +28,7 @@ public class UpdateTime : MonoBehaviour
     void UpdateUI()
     {
         string temp = gameTime.ToString();
-        temp = temp.Substring(0, temp.IndexOf("."));
+        temp = temp.Substring(0, temp.IndexOf(",")); // sometimes "." or "," because localization bug...
 
         // TODO : Format timer like 00:00
 

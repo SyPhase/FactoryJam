@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4388741, g: 0.48706448, b: 0.5673296, a: 1}
+  m_IndirectSpecularColor: {r: 0.4388744, g: 0.48706478, b: 0.5673312, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -496,8 +496,9 @@ GameObject:
   - component: {fileID: 976177912}
   - component: {fileID: 976177911}
   - component: {fileID: 976177910}
+  - component: {fileID: 976177913}
   m_Layer: 0
-  m_Name: Resource (1)
+  m_Name: Resource 50
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -581,6 +582,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976177908}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &976177913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976177908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f8197c7c22839489aa82520ab78415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceValue: 50
 --- !u!1 &978566232
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,8 +675,9 @@ GameObject:
   - component: {fileID: 1133291451}
   - component: {fileID: 1133291450}
   - component: {fileID: 1133291449}
+  - component: {fileID: 1133291452}
   m_Layer: 0
-  m_Name: Resource
+  m_Name: Resource 10
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,6 +761,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133291447}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1133291452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133291447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58f8197c7c22839489aa82520ab78415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceValue: 10
 --- !u!1 &1289433511
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +883,7 @@ GameObject:
   - component: {fileID: 1398973321}
   - component: {fileID: 1398973322}
   - component: {fileID: 1398973324}
+  - component: {fileID: 1398973325}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -905,6 +934,19 @@ MonoBehaviour:
   directionalLight: {fileID: 705507994}
   sunParent: {fileID: 180000343}
   sunRotationSpeed: 0.01
+--- !u!114 &1398973325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398973320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69678ff9a7bfe9b4cb684d6a7faaf6de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceTotal: 0
 --- !u!1 &1638370176
 GameObject:
   m_ObjectHideFlags: 0
