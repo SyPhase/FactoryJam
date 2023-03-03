@@ -25,10 +25,10 @@ public class Selector : MonoBehaviour
         if (!Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity)) { return; }
 
         print("Raycast hit: " + hit.collider.name + ", Tag:" + hit.collider.tag);
-        if (hit.collider.tag == "Selectable")
+
+        if (hit.collider.tag == "Resource")
         {
-            // Invoke EVENT
-            ResourceManager.Instance.SelectResource(4);
+            hit.collider.GetComponent<Resource>().SelectResource();
         }
     }
 }

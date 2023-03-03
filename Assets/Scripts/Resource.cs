@@ -1,21 +1,23 @@
+using System;
 using UnityEngine;
 
 public class Resource : MonoBehaviour
 {
+    public static event Action<int> OnResourceSelected;
+
     [SerializeField] int resourceValue = 10;
 
-    void Awake()
+    public void SelectResource()
     {
-        ResourceManager.OnSelectResource += SelectResource;
+        OnResourceSelected?.Invoke(resourceValue);
+        Destroy(gameObject);
     }
 
-    void OnDestroy()
-    {
-        ResourceManager.OnSelectResource -= SelectResource;
-    }
 
+    /*
     public void SelectResource(int resourceAmount)
     {
         ResourceManager.Instance.AddToResourceTotal(resourceAmount);
     }
+    */
 }
