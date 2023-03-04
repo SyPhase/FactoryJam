@@ -5,10 +5,14 @@ public class MoveCamera : MonoBehaviour
 {
     [SerializeField] Transform playerCameraTransform = null;
 
+    [Tooltip("Speed at which the camera will move")]
     [SerializeField] float speed = 10f;
+    [Tooltip("number of pixels thick the border will be for the mouse to trigger camera movement")]
     [SerializeField] float screenBorderThickness = 10f;
 
+    [Tooltip("Clamps the camera from going to the left or above this bound")]
     [SerializeField] Vector2 screenXLimits = Vector2.zero;
+    [Tooltip("Clamps the camera from going to the right or below this bound")]
     [SerializeField] Vector2 screenZLimits = Vector2.zero;
 
     void Update()
